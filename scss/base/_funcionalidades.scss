@@ -1,0 +1,35 @@
+//*? Variables
+$color-principal: #fff8f0;
+$color-secundario:white;
+$color-terciario:#d9a7a7;
+
+//*? Listas
+$colores:red,blue,pink,green;
+
+
+//*? Extends
+
+%Boton{
+    background-color: black;
+    border: solid gold 2px;
+    color: white;
+}
+
+.tarjetas{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    @extend %Boton;
+}
+
+
+//*? mixin
+    @mixin flex ($flex,$justify,$align){
+        display: $flex;
+        justify-content: $justify;
+        align-items: $align;
+    }
+
+    .contenedor-bienvenidos{
+        @include flex(flex,center,end)
+    }
+

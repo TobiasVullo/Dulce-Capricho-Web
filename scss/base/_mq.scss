@@ -1,0 +1,196 @@
+
+    .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    span {
+        height: 3px;
+        width: 25px;
+        background: #000;
+        margin: 4px 0;
+        transition: all 0.3s ease;
+    }
+    }
+
+    @media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .Barra-nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .Barra-nav ul.active {
+        display: flex;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+/*index*/
+@media  screen and (max-width:660px) {
+
+.header .Barra-nav img {
+position: relative; left: 90%; top:120px;
+width: 100px;height:100px;padding: 0px;
+}
+
+.header{
+    padding: 100px;
+}
+
+
+
+.header div p{
+    background-color: rgb(248, 243, 243);color: brown;
+    font-size: 15px; text-align: start;}
+
+    .Bienvenidos h2{
+        font-size: 15px;
+    }
+.Bienvenidos p{
+font-size: 15px;
+}
+
+    .Whatsapp{
+        position: fixed;
+    bottom: 90px; ;right: 40px;
+    }
+    .Whatsapp  div img{
+        width: 60px; height: 60px;
+    }
+    }
+
+
+@media screen and (max-width: 618px) {
+            /* Enlaces del header más pequeños */
+            .Barra-nav ul li a {
+                font-size: 14px;
+            }
+
+            /* Logo más pequeño y más arriba */
+            .Barra-nav img {
+                width: 80px;
+                height: auto;
+                position: relative;
+                top: -30px;
+            }
+
+            /* Imágenes de la sección .tortas más chicas */
+            .tortas div {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tortas div img {
+                width: 70%; height: 100%;
+                height: auto; margin-left: -70px;
+            }
+
+            .tortas h3 {
+                font-size: 16px;
+                width: 80%;
+                text-align: center;
+            }
+
+            /* Footer más pequeño */
+            .redesfooter img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+
+@media screen and (max-width:500px){
+
+
+    .redesfooter img{
+            width: 50px; height: 50px;
+    }
+
+
+    .Whatsapp{
+        position: fixed;
+    bottom: 90px; ;right: 40px;
+    }
+    .Whatsapp  div img{
+        width: 60px; height: 60px;
+    }
+.Barra-nav img {
+    position: relative;
+    ;left: 65%;
+    top:165px;
+}
+
+.Bienvenidos h2{
+            font-size: 15px;text-align: center;
+    }
+
+
+
+    .tortas{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width:499px){
+.enlaceoculto1{
+display: inline-block;
+        color: white;background-color:black ;
+        text-decoration: none;
+    }
+}
+
+
+/*novedades*/
+@media screen and (max-width: 661px) {
+    .Barra-nav img {
+    position: relative; 
+    top: 250px;  
+    display: block; margin-left: 120%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    
+.novedades h1{
+    font-size:15px ;
+}
+.novedades p{
+    font-size: 15px;
+}
+
+.redesfooter img{
+    width: 50px; height: 50px;
+}
+
+.Whatsapp div a img{
+    width: 50px;height: 50px;
+}
+}
+
+
+
+
+

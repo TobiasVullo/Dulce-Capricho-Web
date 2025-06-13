@@ -1,0 +1,16 @@
+html, body {
+        height: 100%;
+                margin: 0;
+        padding: 0;
+}
+
+/* Hace que el body use un layout flexible vertical */
+body {
+        display: flex;
+        flex-direction: column;
+}
+
+/* El main ocupará todo el espacio disponible (empuja el footer abajo) */
+main {
+        flex: 1;
+}

@@ -1,0 +1,471 @@
+@charset "UTF-8";
+.tarjetas {
+  background-color: black;
+  border: solid gold 2px;
+  color: white;
+}
+
+.tarjetas {
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.caja {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hace que el body use un layout flexible vertical */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* El main ocupará todo el espacio disponible (empuja el footer abajo) */
+main {
+  flex: 1;
+}
+/*index*/
+.logo {
+  width: 250px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1); 
+  }
+}
+
+
+.header {
+  background-color: black;
+  background-image: url(../img/Imagenfondotortachat.jpg.png);
+  background-size: cover;
+  padding: 150px;
+}
+
+.header img{
+  width: 100px; height: 100px; position: relative;
+  right: 90px;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-left: -120px;
+  transition: 0.5s;
+}
+
+.header ul a:hover {
+  background-color: black;
+  border: 1px solid rgb(247, 5, 5);
+}
+
+
+    .contenedor-bienvenidos{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+
+.contenedor-bienvenidos div {
+  width: 250px;
+  height: 300px;
+  border: 1px solid rgb(7, 7, 7);
+  margin-top: 10px;
+}
+.contenedor-bienvenidos p {
+  color: #b44c4c; text-align: center;font-size: 20px;
+}
+
+.contenedor-bienvenidos a{
+  background-color: #f8f8f8; text-decoration:none;
+  transition: 0.5s; color: black; 
+}
+.contenedor-bienvenidos a:hover{
+  text-decoration: none; 
+  background-color: antiquewhite;
+  border: solid black 1px;
+}
+
+.contenedor-bienvenidos a{
+  font-size: 20px; 
+}
+.Bienvenidos p{
+    font-size: 20px;;font-style: oblique; text-align: center;
+}
+
+
+.Bienvenidos h2 {
+  font-size: 30px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  padding: px;
+  color: rgb(245, 245, 245);
+  width: auto;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Bienvenidos img {
+  width: 100%;
+  height: 250px;
+}
+
+
+.Bienvenidos div img{
+    width: 100%; height: 250px;
+}
+
+
+.Bienvenidos h2{
+    font-size: 30px; font-weight: bold; background-color: rgb(0, 0, 0);padding: px; color: rgb(245, 245, 245);width: auto;
+    text-align: center;
+}
+
+.bienvenida-inicio {
+    background-color: #fff8f0;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-top: 2px solid #d9a7a7;
+}
+
+.bienvenida-inicio h1 {
+    font-size: 30px;
+    color: #b44c4c;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.bienvenida-inicio p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+}
+
+.bienvenida-inicio .contacto {
+    font-weight: bold;
+    color: #b44c4c;
+}
+
+
+
+
+
+/* fin de index*/
+/*novedades*/
+.novedades h1{
+background-color: rgb(12, 9, 9); color: white; text-align: center; font-size: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.novedades p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.contactos h2{
+    text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contactos p{
+  text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;
+}
+
+
+.contactos{
+  background-color: #fff8f0; border-top: 1px solid black; 
+}
+
+
+
+/*informacion */
+
+.Informacion h1{
+    text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  background-color: #000000
+    ;border: 1px solid rgb(0, 0, 0); font-size: 30px; color: white;
+}
+
+.Informacion p{
+  text-align: center; font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+
+
+/*Faq*/
+.Preguntas  {
+  font-size: 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;background-color: #fff8f0;
+  border: 1px solid black; margin-top: -6px;
+}
+
+
+
+/*ubicacion*/
+
+
+.entrega h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-align: center;
+}
+
+  .mensaje-final-ubicacion{
+  font-size: 20px; text-align: center; background-color:#fff8f0;;
+  }
+
+
+/*footer*/
+.redesfooter {
+  background-color: #fff8f0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.redesfooter img {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.Whatsapp {
+  position: fixed;
+  bottom: 10px;
+  right: 40px;
+}
+
+.Whatsapp div img {
+  width: 70px;
+  height: 70px;
+}
+
+/*index*/
+@media  screen and (max-width:661px) {
+
+.header img{
+  position: relative; left: 80%; top:220px;
+}
+
+
+.header{
+    padding:90px;
+}
+
+.header ul li a{
+  font-size: 15px;
+}
+.Bienvenidos .contenedor-bienvenidos img{
+  width: 150px; height: 150px;
+
+}
+
+.contenedor-bienvenidos div{
+  width: 200px; height: 200px;
+  position: relative; right:80px;
+}
+
+
+.contenedor-bienvenidos a{
+  font-size: 12px;
+}
+
+.bienvenida-inicio h1 {
+  font-size: 15px;
+}
+.bienvenida-inicio p{
+  font-size: 15px;
+}
+
+
+.header div p{
+    background-color: rgb(248, 243, 243);color: brown;
+    font-size: 15px; text-align: start;}
+
+    .Bienvenidos h2{
+        font-size: 15px;
+    }
+.Bienvenidos p{
+font-size: 15px;
+}
+
+    .Whatsapp{
+        position: fixed;
+    bottom: 90px; ;right: 40px;
+    }
+    .Whatsapp  div img{
+        width: 60px; height: 60px;
+    }
+    }
+
+
+@media  screen and (max-width:625px){
+
+
+
+.Bienvenidos  .contenedor-bienvenidos div{
+  width: 140px; height:120px; position: relative; left: 20px;
+  
+  
+}
+
+.Bienvenidos  .contenedor-bienvenidos div img{
+  width: 100px; height: 100px;
+}
+
+
+  .contenedor-bienvenidos div a{
+    font-size: 10px;
+  }
+  .contenedor-bienvenidos div p{
+    font-size: 10px;
+  }
+
+  .contenedor-bienvenidos div img {
+    width: 50px; height:50px
+  }
+
+  .Bienvenidos img{
+    width: 50px; height:50px
+  }
+
+  div .contenedor-bienvenidos div img{
+    width: 50px; height :50px
+  }
+}
+
+
+
+@media screen and (max-width: 618px) {
+            /* Enlaces del header más pequeños */
+            .Barra-nav ul li a {
+                font-size: 14px;
+            }
+
+            /* Logo más pequeño y más arriba */
+            .Barra-nav img {
+                width: 80px;
+                height: auto;
+                position: relative;
+                top: -30px;
+            }
+
+            /* Imágenes de la sección .tortas más chicas */
+            .tortas div {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .tortas div img {
+                width: 70%; height: 100%;
+                height: auto; margin-left: -70px;
+            }
+
+            .tortas h3 {
+                font-size: 16px;
+                width: 80%;
+                text-align: center;
+            }
+
+            /* Footer más pequeño */
+            .redesfooter img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+@media  screen and (max-width:525px){
+  .Bienvenidos  .contenedor-bienvenidos div{
+  width: 140px; height:120px; position: relative; left: -50px;
+  
+  
+}
+}
+
+  @media screen and (max-width:500px){
+
+
+      .redesfooter img{
+              width: 50px; height: 50px;
+      }
+
+
+      .Whatsapp{
+          position: fixed;
+      bottom: 90px; ;right: 40px;
+      }
+      .Whatsapp  div img{
+          width: 60px; height: 60px;
+      }
+  .Barra-nav img {
+      position: relative;
+      ;left: 65%;
+      top:165px;
+  }
+
+  .Bienvenidos h2{
+              font-size: 15px;text-align: center;
+      }
+
+
+
+      .tortas{
+          display: none;
+      }
+      
+
+  }
+
+
+
+  /*novedades*/
+  @media screen and (max-width: 661px) {
+      .Barra-nav img {
+      position: relative; 
+      top: 200px;  
+      display: block; margin-left: 10%;
+      }
+
+
+      .contactos h2  {
+      font-size: 15px;
+      }
+
+    .contactos p  {
+      font-size: 15px;
+      }
+      .contenedor-bienvenidos{
+        width: 250px; height: 250px;
+position: relative; left: 100px;
+      }
+
+    }
+
+
+  @media screen and (max-width:600px) {
+      
+  .novedades h1{
+      font-size:15px ;
+  }
+  .novedades p{
+      font-size: 15px;
+  }
+
+  .redesfooter img{
+      width: 50px; height: 50px;
+  }
+
+  .Whatsapp div a img{
+      width: 50px;height: 50px;
+  }
+  }

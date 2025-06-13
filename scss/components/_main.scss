@@ -1,0 +1,142 @@
+//*? index
+.contenedor-bienvenidos{display: flex;
+justify-content: space-around;align-items: center;
+flex-wrap: wrap;
+
+    div{
+width:250px;height:300px;; border:1px solid rgb(7, 7, 7);margin-top: 10px;
+
+    }
+    p{
+color: #b44c4c;
+    }
+
+    a{
+background-color: #d9a7a7;border: 2px solid black;
+
+        &:hover{
+            background-color: #d9a7a7;border: 2px solid black;
+        }
+    }
+    
+}
+
+.contenedor-bienvenidos div p{
+    color: #b44c4c;
+}
+.Bienvenidos p{
+    font-size: 30px;;font-style: oblique; text-align: center;
+}
+
+.preciotortas a{
+font-size:15px;
+    text-decoration:none; ;color: rgb(240, 240, 240);
+    ;width:65px; height: 15px; transition: 0.5s;
+}
+.preciotortas a:hover{
+    background-color: rgb(218, 87, 87);border: 1px solid black;
+}
+
+.preciotortas h3{
+    font-size: 20px;
+}
+.Bienvenidos div img{
+    width: 100%; height: 250px;
+}
+
+
+.Bienvenidos h2{
+    font-size: 30px; font-weight: bold; background-color: rgb(0, 0, 0);padding: px; color: rgb(245, 245, 245);width: auto;
+    text-align: center;
+}
+
+.bienvenida-inicio {
+    background-color: #fff8f0;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    border-top: 2px solid #d9a7a7;
+}
+
+.bienvenida-inicio h1 {
+    font-size: 30px;
+    color: #b44c4c;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.bienvenida-inicio p {
+    font-size: 18px;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 15px auto;
+}
+
+.bienvenida-inicio .contacto {
+    font-weight: bold;
+    color: #b44c4c;
+}
+
+
+
+
+
+
+.Bienvenidos{
+    h2{
+font-size: 30px; font-weight: bold; background-color: rgb(0, 0, 0);padding: px; color: rgb(245, 245, 245);width: auto;
+    text-align: center;
+    }
+    img{
+        width: 100%; height: 250px;
+    }
+
+}
+
+/* novedades */
+.novedades h1{
+background-color: black; color: white; text-align: center; font-size: 30px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.novedades p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+
+.contenedor-bienvenidos { /*padre de div*/
+display: flex;
+justify-content: space-around;align-items: center;
+flex-wrap: wrap;
+}
+
+.Bienvenidos .contenedor-bienvenidos div{
+    border: 1px solid black;
+}
+
+.contenedor-bienvenidos div p a{
+    text-decoration: none;color: rgb(0, 0, 0); font-size: 25px; margin-left: -120px;
+    transition: 0.5s; font-size: 19px; margin: 1px; transition: 0.5s;
+
+} 
+
+.contenedor-bienvenidos div p a:hover{
+    background-color: #d9a7a7; border: solid black 1px;
+}
+
+.contenedor-bienvenidos div:nth-child(2) img{
+height: 250px; width: 230px;
+}
+.contactos{
+    text-align: center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    @mixin flex ($flex,$justify,$align){
+        display: $flex;
+        justify-content: $justify;
+        align-items: $align;
+    }
+
+    .contenedor-bienvenidos{
+        @include flex(flex,center,end)
+    }
